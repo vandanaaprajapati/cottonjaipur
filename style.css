@@ -1,0 +1,489 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.divider{
+    height:1px;
+    width:100%;
+    border-bottom: 1px solid #c6b9b9;
+    margin:40px 0;
+}
+.divider1{
+    height:1px;
+    width:100%;
+    border-bottom: 1px solid #c6b9b9;
+    margin-top:40px;
+}
+.togglenav{
+    padding-bottom: 50px;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #ffffff;
+    box-shadow: 0 5px 40px rgba(0,0,0.1);
+    padding:0px 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .navbar ul{
+    list-style: none;
+    
+}
+header .navbar ul li{
+    position: relative;
+    float:left
+}
+header .navbar ul li a{
+font-size: 14px;
+padding:10px;
+color:#000;
+display: block;
+transition: all .2s linear;
+font-weight: 500;
+text-decoration: none;
+}
+header .navbar ul li a:hover{
+    background-color: #000;
+    width:100%;
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    /* top:60px; */
+    width:200px;
+    background-color: rgb(242, 247, 251);
+    display: none;
+    border-top: 2px solid #333;
+
+}
+header .navbar ul li ul li{
+    width:100%;
+    /* border-top: 1px solid #000; */
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color:#333;
+    cursor: pointer;
+    display: none;
+}
+header .social-link ul li{
+    display: inline-block;
+    padding-right:10px;
+}
+header .social-link ul li a{
+    color:#000;
+    font-size: 20px;
+}
+
+/* banner section */
+.banner{
+    margin-top:90px;
+}
+.item{
+    position: relative;
+}
+.item a{
+    text-decoration: none;
+    color:#000
+}
+.item span{
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-color: #fff;
+    padding:2px 5px;
+    border:none;
+    font-size:12px;
+}
+.item img{
+    width:100%;
+    transition: all linear 0.2s;
+}
+
+
+.item img.hover-img{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.item:hover img{
+    opacity:0;
+}
+.item:hover img.hover-img{
+    opacity: 1;
+}
+.nav-tabs .nav-link.active{
+    color: #000 !important;;
+    border-bottom: 1px solid #000!important;
+    margin-bottom: 10px;
+    /* transition: all .5s linear; */
+}
+
+.nav-tabs .nav-link{
+    color: #000 !important;;
+    margin-bottom: 10px;
+}
+
+/* winter section */
+.card-wrapper{
+    position: relative;
+}
+.card-wrapper a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-wrapper img{
+    width:100%;
+    transition: all linear 0.2s;
+}
+
+
+.card-wrapper img.hover-img{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.card-wrapper:hover img{
+    opacity:0;
+}
+.card-wrapper:hover img.hover-img{
+    opacity: 1;
+}
+.category img{
+    width:100%;
+}
+.mb-mobile{
+    margin-bottom: 20px;
+    position: relative;
+}
+.mb-mobile .inner-info{
+    position: absolute;
+    bottom:70px;
+    left:50px;
+}
+.inner-info a{
+    text-decoration: none;
+    background-color: #fff;
+    color:black;
+    padding:10px 25px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 2s linear;
+}
+.inner-info a:hover{
+    border:2px solid black;
+    outline: 5px solid #ffffff;
+}
+footer{
+    padding:75px 0 42px;;
+    background-color:#f3f3f3;
+    border-top: 1px solid #e7dcdc;
+}
+.list ul a{
+    text-decoration: none;
+    color:#333;
+    line-height: 2;
+    font-size: 14px;
+}
+.list ul li{
+    list-style: none;
+}
+.list p{
+    padding-left:30px;
+}
+.sub-btnn{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    padding:10px 20px;
+    letter-spacing: 2px; 
+}
+.list input{
+    background-color: transparent;
+    border:1px solid #e1e1e1;
+}
+.list .icon{
+   display: flex;
+ 
+}
+.icon li{
+    margin-right:20px;
+}
+.svg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.svg img{
+    width:40px;
+    height:20px;
+    margin-right:20px;
+}
+
+/* // */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index:9999;
+    top: 0px;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.side_wrapper{
+    padding-left:30px;
+    padding-right:30px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+} */
+
+.sidebar .closebtn {
+    position: absolute;
+    top: -8px;
+    bottom: -8px;
+    right: -12px;
+    /* left: -12px; */
+    font-size: 36px;
+    /* margin-left: 50px; */
+    
+    transform: translateZ(0);
+}
+.search-tab {
+    display: none;
+    position: fixed;
+    top:110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    width:100%;
+}
+.search-tab input{
+    width:100%;
+}
+/* // */
+
+/* new arrivals page */
+.arrivals{
+    padding-top:140px;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-button::after{
+    background-image: url(images/plus.jpg)!important;
+    /* background-color: #a89c9c !important; */
+}
+.accordian-outer{
+padding:0 50px;
+}
+/* product page */
+.product-img
+{
+height:120px;
+width:80px;
+background-color: red;
+margin-bottom: 20px;
+}
+.product-img img{
+    width:100%;
+    height:100%;
+    
+}
+.scroll-div1{
+    max-height:1000px;
+    position: sticky;
+    top:0px;
+}
+.scroll-div2{
+    max-height:1200px;
+    position: sticky;
+    top:0px;
+}
+.product-list ul li{
+    line-height: 40px;
+    color:#171616
+}
+.img_wrap{
+    width:300px;
+    height:400px;
+}
+.img_wrap img{
+width:100%;
+height:100%;
+}
+/* checkout page css */
+.dropdown-toggle::after {
+    margin-left:50%;
+}
+.checkout-cards ul li,.checkout-cards1 ul li{
+    display: inline-block;
+}
+.checkout-cards li img{
+    width:40px
+}
+.checkout-cards1 li img{
+    width:20px
+}
+.checkout-foot{
+    width:50%;
+    padding:0 3%;
+}
+.checkout-foot ul{
+display: flex;
+list-style: none;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.checkout-foot ul li a{
+    color:#000;
+    font-size: 13px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.p-img::after{
+    content: '1';
+    height:25px;
+    width:25px;
+    background:rgba(0, 0, 0, 0.5);
+    color:white;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    left:19%;
+    top:5px
+}
+/* login page */
+.myform{
+    /* height:300px; */
+    width:500px;
+    /* background-color: red; */
+ margin:230px auto;
+}
+/* new arrivals page ends */
+@media(max-width:991px){
+    /* navbar section */
+    .navbar{
+        height:auto;
+
+    }
+    header{
+        padding:20px;
+        color:#fff;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: fixed;
+        background-color: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        top:80px;
+        left:-200%;
+        transition: all 0.5s 0s ease-in;
+        z-index: 999;
+        width:auto;
+    }
+    header .navbar ul{
+        width:90%;
+    }
+    header .navbar ul li{
+        width:90%;
+        /* line-height: 50px; */
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background-color: #eee;
+    }
+#menu-bar:checked ~ .navbar{
+    left:0px
+}
+.checkout-foot{
+    width:100%;
+    padding:0 2%;
+}
+/* navbar ends */
+}
+@media(max-width:310px){
+    .navbar{
+        height:auto;
+
+    }
+    header{
+        padding:20px;
+        color:#fff;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: fixed;
+        background-color: azure;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        top:80px;
+        left:-100%;
+        transition: all 0.5s 0s ease-in;
+        z-index: 999
+    }
+    header .navbar ul li{
+        width:100%;
+        /* line-height: 50px; */
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background-color: #eee;
+    }
+#menu-bar:checked ~ .navbar{
+    left:0px
+}
+
+}

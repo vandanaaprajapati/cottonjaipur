@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" style="padding:0 140px;">
+    <div class="d-flex justify-content-between">
+        <div class="col-md-6" style="padding-top:50px;">
+            <a href=""><img src="images/cart-logo.jpg" width="30px" alt=""></a>
+        </div>
+        <div class="col-md-6" style="padding-top: 20px;">
+            <a href=""><img src="images/cart_logo.webp" alt="" width="120px"></a>
+        </div> 
+    </div>
+</div>
+<div class="divider1"></div>
+
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6 pt-5 px-5">
+        <div class="d-flex mb-4 justify-content-between align-items-center">
+          <h4>Contact</h4>
+          <p>Have an account? <span><a href="">Log in</a></span></p>
+      </div>
+      <form action="">
+        <div class="mb-3">
+          <input type="email" class="form-control border mb-2 shadow-none" placeholder="Email">
+          <input type="checkbox" name="" id="" checked class="text-dark"><span style="font-size: 13px;"> Sign up for order updates, exclusive offers and news on WhatsApp and/or Email.</span>
+        </div>
+        <h4>Delivery</h4> 
+        <div class="dropdown">
+            <button class="btn text-secondary p-2 btn-white border shadow-none form-control dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+            Country/Region
+            </button>
+            <ul class="dropdown-menu form-control border shadow">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> 
+          <div class="row mt-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control border shadow-none" placeholder="First Name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control border shadow-none" placeholder="Last Name">
+              </div>
+              <div class="col-12 mt-3">
+                <input type="text" class="form-control border shadow-none" placeholder="Address">
+              </div>
+              <div class="col-12 mt-3">
+                <input type="text" class="form-control border shadow-none" placeholder="Apartment,Suite,etc. (Optional)">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="text" class="form-control border shadow-none" placeholder="Postal code">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="text" class="form-control border shadow-none" placeholder="City">
+              </div>
+              <div class="col-12 mt-3">
+                <input type="text" class="form-control border shadow-none" placeholder="Phone Number for older Updates">
+              </div>   
+          </div>
+          <input type="checkbox" name="" id="" checked class="text-dark mt-3"><span style="font-size: 13px;"> Sign up for order updates, exclusive offers and news on WhatsApp and/or Email.</span>     
+      </form>
+      <h6 class="mt-3">Shipping Method</h6>
+      <p class=" text-secondary p-3 rounded-3" style="font-size: 13px;background-color: rgb(239, 236, 236);">Enter your shipping address to view available shipping methods.</p>
+      <h4>Payment</h4>
+      <p style="color:grey;font-size: 14px;">All transactions are secure and encrypted.</p>
+      <div id="accordion">
+        <!-- Bootstrap radio buttons with Collapse components -->
+        <div class="card border-0">
+          <div class="card-header" id="headingOne">
+              <input class="form-check-input p-2" type="radio" name="showForm" id="showForm1" value="#collapseOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <label class="form-check-label w-100" for="showForm1">
+                      <div class="d-flex mb-3 justify-content-between align-items-center" >
+                          <p>Credit Card</p>
+                          <div class="checkout-cards">
+                              <ul>
+                                  <li><img src="images/svg1.png" alt=""></li>
+                                  <li><img src="images/svg2.png" alt=""></li>
+                                  <li><img src="images/svg3.png" alt=""></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </label>
+          </div>
+          <div id="collapseOne" class="collapse" style="background-color: rgb(252, 252, 252);"aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <!-- Bootstrap input form 1 -->
+            <form action="">
+              <input type="text" class="form-control shadow-none mb-3" placeholder="Card Number">
+              <div class="row">
+                  <div class="col-md-6">
+                      <input type="text" class="form-control shadow-none" placeholder="Expiration date (MM/YY)">
+                  </div>
+                  <div class="col-md-6">
+                      <input type="text" class="form-control shadow-none" placeholder="Security Code">
+                  </div>
+              </div>
+              <input type="text" class="form-control shadow-none my-3" placeholder="Name on Card">
+              
+              <div class="form-check">
+                <input type="checkbox" name="" id="showFormCheckbox" checked>
+                <label class="form-check-label" for="showFormCheckbox">Use shipping address as billing address</label>
+
+            <form id="myform" style="display: none;">
+                    <h6 class="my-3">Billing Address</h6> 
+                <div class="dropdown">
+                <button class="btn text-secondary p-2 bg-white border shadow-none form-control dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+                Country/Region
+                </button>
+                <ul class="dropdown-menu form-control border shadow">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control border shadow-none" placeholder="First Name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control border shadow-none" placeholder="Last Name">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <input type="text" class="form-control border shadow-none" placeholder="Address">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <input type="text" class="form-control border shadow-none" placeholder="Apartment,Suite,etc. (Optional)">
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <input type="text" class="form-control border shadow-none" placeholder="Postal code">
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <input type="text" class="form-control border shadow-none" placeholder="City">
+                  </div>
+                  <div class="col-12 mt-3">
+                    <input type="text" class="form-control border shadow-none" placeholder="Phone Number for older Updates">
+                  </div>   
+              </div>
+            </form>
+            </div>
+            </form>
+
+
+            </div>
+          </div>
+        </div>
+  <!-- 1st radio ends -->
+
+    <!-- Bootstrap radio buttons with Collapse components -->
+    <div class="card border-0 ">
+      <div class="card-header" id="headingTwo">
+          <input class="form-check-input p-2" type="radio" name="showForm" id="showForm2" value="#collapseTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <label class="form-check-label w-100" for="showForm2">
+              <div class="d-flex mb-3 justify-content-between align-items-center" >
+                  <p>Razorpay Secure (UPI, Cards, Wallets, NetBanking)</p>
+                  <div class="checkout-cards1">
+                      <ul>
+                          <li><img src="images/svg1.png" alt=""></li>
+                          <li><img src="images/svg2.png" alt=""></li>
+                          <li><img src="images/svg3.png" alt=""></li>
+                          <li>+</li>
+                      </ul>
+                  </div>
+              </div>
+          </label>
+      </div>
+      <div id="collapseTwo" class="collapse" style="background-color: rgb(252, 252, 252);"aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          <!-- Bootstrap input form 2 -->
+        <img src="images/billing.png" class="w-100" alt="">
+        </div>
+      </div>
+    </div>
+      <!-- 3rd radio -->
+      <div class="card border-0">
+          <div class="card-header" id="headingThree">
+              <input class="form-check-input p-2" type="radio" name="showForm" id="showForm3" value="#collapseThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <label class="form-check-label w-100" for="showForm3">
+              Cash On Delivery
+              </label>
+          </div>
+      </div>
+
+
+    <h4 class="mt-3">Billing Address</h4>
+    <div id="accordion">
+      <!-- Bootstrap radio buttons with Collapse components -->
+      
+  <!-- 1st radio ends -->
+
+    <!-- 3rd radio -->
+    <div class="card border-0 ">
+        <div class="card-header" id="headingThree">
+            <input class="form-check-input p-2" type="radio" name="showForm" id="showForm3" value="#collapseThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <label class="form-check-label w-100" for="showForm3">
+            Same as Shipping address
+            </label>
+        </div>
+    </div>
+    <div class="card border-0 ">
+      <div class="card-header" id="BillOne">
+          <input class="form-check-input p-2" type="radio" name="showForm" id="showbillForm1" value="#collapseBillOne" data-toggle="collapse" data-target="#collapseBillOne" aria-expanded="true" aria-controls="collapseBillOne">
+              <label class="form-check-label w-100" for="showbillForm1">
+                      <p> Use a different billing address</p>
+              </label>
+      </div>
+      <div id="collapseBillOne" class="collapse" style="background-color: rgb(252, 252, 252);"aria-labelledby="BillOne" data-parent="#accordion">
+        <div class="card-body">
+          <!-- Bootstrap input form bill 2 -->
+        
+          <form id="form1">
+        <div class="dropdown">
+        <button class="btn text-secondary p-2 bg-white border shadow-none form-control dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+        Country/Region
+        </button>
+        <ul class="dropdown-menu form-control border shadow">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+            <input type="text" class="form-control border shadow-none" placeholder="First Name">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control border shadow-none" placeholder="Last Name">
+          </div>
+          <div class="col-12 mt-3">
+            <input type="text" class="form-control border shadow-none" placeholder="Address">
+          </div>
+          <div class="col-12 mt-3">
+            <input type="text" class="form-control border shadow-none" placeholder="Apartment,Suite,etc. (Optional)">
+          </div>
+          <div class="col-md-6 mt-3">
+            <input type="text" class="form-control border shadow-none" placeholder="Postal code">
+          </div>
+          <div class="col-md-6 mt-3">
+            <input type="text" class="form-control border shadow-none" placeholder="City">
+          </div>
+          <div class="col-12 mt-3">
+            <input type="text" class="form-control border shadow-none" placeholder="Phone Number for older Updates">
+          </div>   
+      </div>
+    </form>
+    </div>
+    </form>
+    </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn form-control bg-dark my-4 text-light"><a href="" class="text-light text-decoration-none">Complete Order</a></button>
+  <div class="divider"></div>
+  
+      </div>
+      <div class="col-md-6 pt-5 px-5 border-left border-sm-none">
+        <h4 class="d-md-none d-block">Order Summary</h4>
+       <div class="col-md-10 p-3">
+        <div class="d-flex justify-content-between">
+          <div class="p-img">
+            <img src="images/img1.1.jpg" class="px-2 border rounded" alt="" width="70">
+          </div>
+          <p style="font-size: 13px;">Malva Panelled kurta<br><span class="lead">S</span></p>
+          <h6>₹ 2,000</h6>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+          <input type="text" placeholder="Discount code or gift card" class="form-control mr-md-3">
+          <button class="btn" style="background-color: rgb(224, 227, 230);color:grey">Apply</button>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+          <h6>Subtotal</h6>
+          <h6>₹ 1,300</h6>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+          <h6>Shipping <i class="fa-regular text-secondary fa-circle-question"></i></h6>
+          <p style="font-size: 12px;color:grey">Enter shipping address</p>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+          <h6>Total</h6>
+          <h6><span style="font-size: 14px;color:grey">INR</span> ₹ 1,300</h6>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+    <!-- </div> -->
+    <div class="checkout-foot">
+      <ul class="">
+        <li><a href="">Refund policy</a></li>
+        <li><a href="">Shipping policy</a></li>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Terms of policy</a></li>
+        <li><a href="">Contact Inforamtion</a></li>
+      </ul>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

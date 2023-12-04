@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Cotton Jaipur</title>
+    <!-- style.css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- carousal min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- carousal default theme.min.css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- aos cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- lightbox2 css file link -->
+<link rel="stylesheet" href="lightbox.css">
+
+</head>
+<body>
+    <header>
+         <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+        <a href="index.html" class="logo"><img src="images/logo.webp" alt=""></a>
+       
+        <nav class="navbar">
+            <ul>
+                <li><a href="new_Arrival.html">New Arrivals</a></li>
+                <li><a href="">Women</a>
+                <ul>
+                    <li><a href="festive.html">Festive Collection</a></li>
+                    <li><a href="kurtas.html">Kurtas</a></li>
+                    <li><a href="dresses.html">Dresses</a></li>
+                    <li><a href="tops.html">Tops</a></li>
+                    <li><a href="dupatta.html">Duppattas</a></li>
+                    <li><a href="lower.html">Lowers</a></li>
+                </ul>
+                </li>
+                <li><a href="">Men</a>
+                <ul>
+                    <li><a href="mens.html">Shirts</a></li>
+                </ul>
+                </li>
+                <li><a href="women-winter-wear.html">Winter Wear</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="night_wear.html">Night Wear</a></li>
+                <li><a href="store.html">Our Stores</a></li>
+            </ul>
+        </nav>
+        <div class="social-link">
+        <ul>
+            <li><a href="loginform.html"><i class="fa-solid fa-user"></i></a></li>
+            <li id="searchbtn" class="text-dark"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li id="CartBtn" class="text-dark"><i class="fa-solid fa-cart-plus"></i></li>
+            <!-- <button id="filterBtn" class="btn btn-primary">Filter</button> -->
+        </ul>
+        </div>
+    </header>
+    <!-- // -->
+    <!-- search tab -->
+    <div id="searchTab" class="search-tab">
+        <form class="d-flex">
+            <!-- Your search form elements go here -->
+            <input type="search" class="form-control shadow-none border-0" placeholder="Search...">
+            <button class="border-0 p-2" id="closeSearchBtn"><i class="fa-solid fa-xmark"></i></button>
+
+        </form>
+    </div>
+    <!-- cart sidebar -->
+    <div id="CartSidebar" class="sidebar">
+        <div class="side_wrapper">
+            <span class="fs-5 fw-bold">Cart</span>
+            <h5 id="closeBtn"><i class="fa-solid fa-xmark"></i></h5>
+        </div>
+        <div style="border-bottom:1px solid rgb(226, 207, 207);width:100%"></div>
+        <!-- Content for the sidebar goes here -->
+        <div class="cart_wrapper">
+            <div class="card mb-3 border-0 p-4" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/img2.6.webp" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="card-title fw-bold" style="font-size: 13px;">Blue Woollen Coat With Border</p>
+                      <p class="card-text" style="font-size: 11px;">Free Size</p>
+                      <p class="card-text"><small class="text-body-secondary">₹ 3,800 (Inc. of GST)</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+<section style="margin-top:140px;">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-1 d-none scroll-div1 d-md-block">
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p1.webp" alt="img1">
+                    </a>
+                </div>
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p2.webp" alt="">
+                    </a>
+                </div>
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p3.webp" alt="">
+                    </a>
+                </div>
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p4.webp" alt="">
+                    </a>
+                </div>
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p5.webp" alt="">
+                    </a>
+                </div>
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p6.webp" alt="">
+                    </a>
+                </div>
+                <div class="product-img mx-auto">
+                    <a href="#">
+                        <img src="images/product/p7.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="container-fluid">
+                       <!-- Images in a Column (Desktop View) -->
+                    <div class="row d-none d-md-block">
+                      <div class="">
+                        <a href="images/product/p1.webp" data-lightbox="models" data-title="caption1">
+                        <img src="images/product/p1.webp" class="w-100 mb-4">
+                        </a>
+                      </div>
+                      <div class="">
+                        <a href="images/product/p2.webp" data-lightbox="models" data-title="caption1">
+                            <img src="images/product/p2.webp" class="w-100 mb-4">
+                            </a>
+                      </div>
+                      <div class="">
+                        <a href="images/product/p3.webp" data-lightbox="models" data-title="caption1">
+                            <img src="images/product/p3.webp" class="w-100 mb-4">
+                            </a>
+                      </div>
+                      <div class="">
+                        <a href="images/product/p4.webp" data-lightbox="models" data-title="caption1">
+                            <img src="images/product/p4.webp" class="w-100 mb-4">
+                            </a>
+                      </div>
+                      <div class="">
+                        <a href="images/product/p5.webp" data-lightbox="models" data-title="caption1">
+                            <img src="images/product/p5.webp" class="w-100 mb-4">
+                            </a>
+                      </div>
+                      <div class="">
+                        <a href="images/product/p6.webp" data-lightbox="models" data-title="caption1">
+                            <img src="images/product/p6.webp" class="w-100 mb-4">
+                            </a>
+                      </div>
+                      <div class="">
+                        <a href="images/product/p7.webp" data-lightbox="models" data-title="caption1">
+                            <img src="images/product/p7.webp" class="w-100 mb-4">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+<!-- carousal for mobile screen only -->
+                  <div class=" d-block d-md-none mb-5">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="images/product/p1.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/product/p2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/product/p3.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/product/p4.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/product/p5.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/product/p6.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/product/p7.webp" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-5 scroll-div2">
+                <h2>Neela Kasuti kurta</h2>
+                <p>SKU: KC6239 BLUE CHX</p>
+               <p>₹ 2,300 (Inc. of GST)</p>
+                <div>
+                    <div class="d-flex justify-content-between">
+                        <p>Size:</p>
+                        <a href="images/product/size.webp" class="text-dark fw-bold">Size Guide</a>
+                    </div>
+                    <div class="d-flex">
+                        <p class="border mx-3 p-4">S</p>
+                        <p class="border mx-3 p-4">M</p>
+                        <p class="border mx-3 p-4">L</p>
+                        <p class="border mx-3 p-4"><s>XL</s></p>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <p>Quantity:</p>
+                        <a href="" style="text-decoration: none;font-size: 13px;">Can't find my Size. <span class="text-dark fw-bold" style="font-size:13px;" > Notify Me </span></a>
+                    </div>
+                    <div style="height:40px;padding:5px 20px;line-height: 30px;"class="col-md-3 d-flex justify-content-between  border text-center">
+                        <p class="fs-5">-</p>
+                        <p>1</p>
+                        <p>+</p>
+                    </div>
+                </div>
+                <a href="#" for="CartBtn" class="btn form-control mt-4 rounded-0 border shadow-none">ADD TO CART</a>
+                <a href="checkout.html" class="btn form-control bg-dark text-white rounded-0 mt-4 shadow-none">BUY IT NOW</a>
+                <div class="mt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button shadow-none border-bottom bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Details
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body product-list">
+                             <ul> 
+                                <li>Straight fit cotton kurta.</li>
+                                <li>Shirt collar and sleeves.</li>
+                                <li>Placket at left side with wooden buttons.</li>
+                                <li>Hi-low hem.</li>
+                                <li>Finished with french seams.</li>
+                                <li>Estimated ship time: 3-5 working days.</li>
+                                <li>Actual colour may vary slightly due to photographic lighting sources and device screen settings.</li>
+                                <li>Model is wearing size ’s’.</li>
+                             </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none border-bottom bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Description
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>This emerald green shirt-kurta has an interesting collar with wooden buttons. Roll up sleeves and a curved hemline add to this understated yet trendy kurta.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none bg-white border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              fabric
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>Handloom Cotton</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed shadow-none border-bottom bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                Description
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>This emerald green shirt-kurta has an interesting collar with wooden buttons. Roll up sleeves and a curved hemline add to this understated yet trendy kurta.</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+       </div>
+</section>
+  <section>
+    <h5 class="text-center mt-5">Match With</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3 mx-auto mt-5">
+                <div class="item mb-4">
+                    <a href="#">
+                        <div class="card mb-3 border-0 shadow">
+                            <img src="images/product/pant1.webp" alt="image" class="card-img-top">
+                            <img src="images/product/pant1.1.webp" alt="image" class="card-img-top hover-img">
+                        </div>
+                        <div class="card-body">
+                            <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                            <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+                        </div>
+                        <span>NEW</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+  <section>
+    <div class="container mb-4">
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="card mb-3 border-0 shadow">
+                  <img src="images/img1.1.jpg" alt="image" class="card-img-top">
+                  <img src="images/img1.2.webp" alt="image" class="card-img-top hover-img">
+              </div>
+              <div class="card-body">
+                  <p style="font-size: 12px;text-align: center;font-weight: bold;">Blue Woolen Coat With Border</p>
+                  <p style="font-size: 13px;text-align: center;">₹3,800 (Inc. of GST)</p>
+              </div>
+              <span>NEW</span>
+          </a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 list mb-3">
+                    <ul>
+                        <li class="text-dark fw-bold mb-2">Help</li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Payment</a></li>
+                        <li><a href="">Exchange/Return</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-2 list mb-3">
+                    <ul>
+                        <li class="text-dark fw-bold mb-2">Important Links</li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Payment</a></li>
+                        <li><a href="">Exchange/Return</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-2 list mb-3">
+                    <ul>
+                        <li class="text-dark fw-bold mb-2">Info</li>
+                        <li><a href="">Our Stores</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 list mb-3">
+                    <p><strong>Contact Us</strong></p>
+                    <p><strong>Email: </strong> care@cottonsjaipur.com</p>
+                    <p><strong>Mob: </strong>  +91 73579 96444, +91 98297 45762</p>
+                    <p>(Mon - Sat 9:00AM - 05:00PM)</p>
+                    <p><strong>Manufactured by: </strong>Kachnaar Crafts Pvt. Ltd. , F-23 (AB1), Malviya Nagar Industrial Area, Jaipur, Rajasthan - 302017</p>
+                    <ul class="icon">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-8 px-5 mt-sm-4 mb-4">
+                    <p><strong>Newsletter</strong></p>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form action="">
+                        <input type="email" placeholder="Enter Your email address" class="p-2 mb-4 form-control">
+                    </form>
+                    <p>
+                    <a href="#" class="sub-btnn">SUBSCRIBE</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 mt-5 svg">
+            <p><strong>Cottons Jaipur</strong><br>© All Rights Reserved by Kachnaar Crafts Pvt. Ltd.</p>
+            <div>
+                <img src="images/svg1.png" alt="">
+                <img src="images/svg2.png" alt="">
+                <img src="images/svg3.png" alt="">
+                <img src="images/svg4.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- own carousal min.js cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- sidebar -->
+<script>
+// serach fadeout
+$(document).ready(function () {
+    $("#searchbtn").on("click", function () {
+        $("#searchTab").fadeIn(); // Show the search tab
+    });
+
+    $("#closeSearchBtn").on("click", function () {
+        $("#searchTab").fadeOut(); // Hide the search tab
+    });
+});
+// card slider 
+    $(document).ready(function () {
+    $("#CartBtn").on("click", function () {
+        $("#CartSidebar").width(400); // Set the width of the sidebar
+    });
+
+    $("#closeBtn").on("click", function () {
+        $("#CartSidebar").width(0); // Close the sidebar
+    });
+});
+</script>
+<!-- lightbox2 script link -->
+<script src="lightbox-plus-jquery.min.js"></script>
+    <!-- initialise owl caraousal -->
+    
+    <!-- caousal cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+      loop:false,
+      margin:10,
+      nav:false,
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+  })
+  </script>
+    <!-- aos js link -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos initialise  -->
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
